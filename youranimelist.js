@@ -7,15 +7,14 @@ async function getAnime() {
 
     // Parsing it to JSON format 
     const data = await response.json(); 
-    console.log(data.approved); 
 
     // Retrieving data from JSON
-    //const anime = data.title_english;
+    const anime = data.data;
+    let {title_english} = anime
 
-    
     // Accessing the div container and modify/add 
-      // elements to the containers 
-    document.getElementById("animename").innerHTML = data.title_english;
+    // elements to the containers 
+    document.getElementById("animename").innerHTML = title_english;
 }
 
 getAnime();
