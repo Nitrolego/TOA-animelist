@@ -22,8 +22,8 @@ async function getAnime(id) {
     // Accessing the div container and modify/add 
     // elements to the containers
 
-    var container = document.createElement("div")
-
+    var container = document.createElement("figure")
+    
     var link = document.createElement("a")
     link.href = url
     var img = document.createElement("img");
@@ -31,11 +31,14 @@ async function getAnime(id) {
     img.src = images
     link.appendChild(img)
     container.appendChild(link)
-    
-    var text = document.createElement("div");
+
+    var text = document.createElement("figcaption");
     text.className = "anime-name"
     text.innerHTML = title;
     container.appendChild(text)
+
+    // var br = document.createElement("br");
+    // container.appendChild(br)
 
     document.body.appendChild(container)
 
@@ -45,9 +48,10 @@ async function getAnime(id) {
     }
 }
 
-for (let i = 1; i < 15; i++) {
+for (let i = 1; i < 100; i++) {
     getAnime(i);
 }
+// getAnime(5)
 
 // try catch block might be more suitable for this.
 

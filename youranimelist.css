@@ -1,12 +1,15 @@
 img {
+    position: relative;
     width: 300px;
     height: 400px;
-    padding: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
-p {
+figcaption {
     padding: 35px;
-}
-div {
-    display: inline;
     text-align: center;
+    word-wrap: normal;
+}
+figure {
+    display: inline-block;
 }
