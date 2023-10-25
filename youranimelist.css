@@ -1,0 +1,12 @@
+img {
+    width: 300px;
+    height: 400px;
+    padding: 35px;
+}
+p {
+    padding: 35px;
+}
+div {
+    display: inline;
+    text-align: center;
+}
