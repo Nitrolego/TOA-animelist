@@ -70,35 +70,5 @@ async function getAnime(numberOfRequest) {
     }
 }
 
-// repeat api calls for first 100 ids in Jikan
-// for (let i = 1; i < 100; i++) {
-//     getAnime(i, 20)
-// }
-
-getAnime(20)
-
-// let i = 1;
-// while (success < 20) {
-//     getAnime(i);
-//     i++;
-// }
-
-// while (success < 20) {
-//     getAnime(i).then((response) => {
-//         if (response.ok) {
-//             success += 1;
-//             i++;
-//             console.log(success);
-//             console.log(i)
-//         }
-//         i++;
-//     });
-// }
-
-// do {
-//     getAnime(i);
-//     i++
-// }
-// while (success < 20);
-
+getAnime(100)
 
